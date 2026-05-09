@@ -1,4 +1,4 @@
-package Pages;
+package busPages;
 
 import java.io.IOException;
 import java.time.Duration;

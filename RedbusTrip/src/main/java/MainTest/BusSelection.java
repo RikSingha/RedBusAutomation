@@ -3,13 +3,14 @@ package MainTest;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
-import Pages.BusSeatSelection;
-import Pages.EnterCustomerDetails;
-import Pages.FilterBus;
-import Pages.HomePage;
-import Pages.LocationSelection;
+
 import Utilities.Excel;
 import Utilities.Testbase;
+import busPages.BusSeatSelection;
+import busPages.EnterCustomerDetails;
+import busPages.FilterBus;
+import busPages.HomePage;
+import busPages.LocationSelection;
 
 public class BusSelection extends Testbase{
 	
@@ -22,6 +23,10 @@ public class BusSelection extends Testbase{
 		
 		int parsedFare = Integer.parseInt(budget);
 		CreateFolder(TescaseID);
+		
+		driver.get("https://www.redbus.in/bus-tickets");
+		Thread.sleep(2000);
+		
 		//Page 1
 		HomePage ho = new HomePage(driver);
 		ho.BusSelection(Source, Destination,SourceSuggestion,DestinationSuggestion, TescaseID);

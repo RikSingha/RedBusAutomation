@@ -21,8 +21,6 @@ public class Testbase {
 	public void openBrowser() throws InterruptedException {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.redbus.in/bus-tickets");
-		Thread.sleep(2000);
 	}
 	
 	@AfterMethod
@@ -45,7 +43,7 @@ public class Testbase {
 	}
 	
 	public static void CreateFolder(String TescaseID) {
-		String path = "D:\\Selenium Workspace\\RedbusTrip\\Screenshots\\"+TescaseID;
+		String path = "D:\\Selenium Workspace\\Git\\RedbusTrip\\Screenshots\\"+TescaseID;
         File folder = new File(path);
 
         if (!folder.exists()) {

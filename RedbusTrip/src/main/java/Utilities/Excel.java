@@ -42,6 +42,11 @@ public class Excel {
 
     @DataProvider(name = "ActualData")
     public static String[][] GetData() {
-        return Utilities.Excel.get("D:\\Selenium Workspace\\RedbusTrip\\Test Data\\RedBus.xls");
+        return Utilities.Excel.get("D:\\Selenium Workspace\\Git\\RedbusTrip\\Test Data\\RedBus.xls");
+    }
+    
+    @DataProvider(name = "ActualTrainData")
+    public static String[][] GetTrainData() {
+        return Utilities.Excel.get("D:\\Selenium Workspace\\Git\\RedbusTrip\\Test Data\\RedTrain.xls");
     }
 }
