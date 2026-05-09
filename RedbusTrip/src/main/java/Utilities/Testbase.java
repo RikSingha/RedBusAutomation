@@ -38,7 +38,7 @@ public class Testbase {
 	
 	public static void TakesScreenshot(String PageName, String TescaseID) throws IOException {
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(srcFile, new File("D:\\Selenium Workspace\\RedbusTrip\\Screenshots\\"+TescaseID+"\\"+PageName+".png"));
+		FileUtils.copyFile(srcFile, new File("D:\\Selenium Workspace\\Git\\RedbusTrip\\Screenshots\\"+TescaseID+"\\"+PageName+".png"));
 
 	}
 	

@@ -23,7 +23,6 @@ public class Helpers {
 			inputDate=String.valueOf(currentDate.getDayOfMonth());
 		}
 		String newInputDate = String.valueOf(currentDate.getYear())+"-"+inputMonth+"-"+inputDate;
-		System.out.println(newInputDate);
 		return newInputDate;
 	}
 
